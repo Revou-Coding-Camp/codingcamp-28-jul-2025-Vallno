@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini Project Revou</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-papG3+bL4iYHc7YbDNM9n0tU7bNw7VchH4Fj1U2rwk/h4X7XkY5h9fVq8i4B9C5jE3VbIY0zEws0yD0lP5e5Ug==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logoadb.png" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#our-profile">Our Profile</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#message-us">Message Us</a></li>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <h1 id="welcome-message">Hi, Welcome To Website</h1>
+        <p>Ini adalah website SMKN 1 Adiwerna</p>
+        <div class="banner">
+            <img src="adb.jpg" alt="sekolah">
+        </div>
+    </section>
+
+    <!-- OUR HEADQUARTER -->
+    <section id="our-profile" class="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="locations">
+            <div class="location">
+                <div class="circle">
+                    <img src="download.jpeg" alt="sekolah 2">
+                </div>
+                <p>Tegal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MESSAGE US -->
+    <section id="message-us" class="message-section">
+        <h2>Message Us</h2>
+        <div class="message-container">
+            <form id="message-form">
+                <label>Nama:</label>
+                <input type="text" id="name" required>
+
+                <label>Tanggal Lahir:</label>
+                <input type="date" id="birth-date" required>
+
+                <label>Jenis Kelamin:</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                </div>
+
+                <label>Pesan:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="message-result" id="result">
+                <p>Current time: <span id="current-time"></span></p>
+                <p>Nama: <span id="result-name"></span></p>
+                <p>Tanggal Lahir: <span id="result-birth"></span></p>
+                <p>Jenis Kelamin: <span id="result-gender"></span></p>
+                <p>Pesan: <span id="result-message"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Created By Revou</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
